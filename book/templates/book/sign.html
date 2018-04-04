@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign</title>
+
+    <link rel="stylesheet" href="{% static 'book/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'book/css/custom.css' %}">
+</head>
+<body>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+    <div class="container">
+    <h1>Sign the Guest Book</h1>
+    <form class="form-row form-custom" method="POST" action="{% url 'sign' %}">
+        {% csrf_token %}
+        <div>
+            {{ form.name }}<br>
+            {{ form.comment }}
+            <center><button type="submit" class=" btn btn-primary col-7 rounded-0 pt-2 pb-2  ">Sign</button></center>
+        </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

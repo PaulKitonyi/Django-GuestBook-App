@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guest Book</title>
+    
+    <link rel="stylesheet" href="{% static 'book/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'book/css/custom.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+               
+        <div class="jumbotron">
+            <h1>Guest Book</h1>
+            <a type="button" class="btn btn-link" href="{% url 'sign' %}">Sign the Guest Book Here!!</a>
+        </div>
+         {% for c in comments %}
+        <div class="page-header">
+            <h1>{{ c.name }}</h1>
+        </div>
+        <div class="jumbotron">
+            <p>{{ c.comment }}</p>
+        </div>
+         {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    font-size: 16px;
+    font-family: Oxygen;
+    background: url('../img/bg.png') repeat;
+    /* background-color:#c9c8c7; */
+    margin: 0px;
+    
+}
+
+body>.container{ 
+    padding:0px;
+    /* margin-top: 10px; */
+    /* box-shadow: 5px 5px #888888; */
+
+}
+
+.navbar-brand span{
+    color:#3358DF ;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.navbar-toggler img{
+    height: 20px;
+    padding-left:0px;
+    margin: 3px;
+}
+.navbar-toggler{
+    border-color: #ffbb20;
+}
+li .nav-item .nav-link .bg-blue{
+    color: #3358DF;
+}
+
+i .nav-item .nav-link .bg-blue{
+    color: #3358DF;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #3358DF;
+    font-weight: 500;
+}
+
+
+
+.jumbotron-custom{
+    border-radius: 0%;
+    color: #3358DF;
+    font-family: "Open Sans" ;
+}
+.jumbotron-custom  p{
+    font-weight: 100px;
+}
+
+ 
+/* ----------------------------------------------------- SIGN IN FORM FORMS-------------------------------------------------------------- */
+.form-custom .form-control{
+    border-radius: 0%;
+    padding: 10px;
+}
+
+/* -------------------------------------buttton------- */
+button .btn .btn-primary .col-12 .bg-color-custom:important{
+    background-color:#6631E0;
+}
+
+.btn-primary:hover{
+    border-color: #3358DF;
+}
+
+/* -------------------------------------------------- END OF FORM---------------------------------------------------------------------- */
+#userlinks a {
+    color:#3358DF; 
+    text-decoration:none;
+    margin-top: 10;
+}
+
+#userlinks ul {
+    list-style:none;
+    padding:0;
+    margin-left:5px;
+}
+
+
+/* --------------------------------------------------Floating books picture ----------------------------------------------------------- */
+#library img{
+    float: right;
+    margin-top: -205px;
+    position: relative;
+  }
+
+
+
+  /* --------------------------------------------------end of Floating books picture ----------------------------------------------------------- */
+
+
+
+
+  /* ---------------------------------------------   Footer -------------------------- */
+footer{
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      height:200px;
+      background-color:#555062;
+  }
+
+  footer p{
+      margin-bottom: .25em;
+
+  }
+  
